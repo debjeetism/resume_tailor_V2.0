@@ -19,7 +19,7 @@ app = FastAPI(
 # CORS (lock this down to your frontend origin in prod)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://resume-tailor-v2-0-1.onrender.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
