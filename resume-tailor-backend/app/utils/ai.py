@@ -33,7 +33,7 @@ def tailor_resume(resume_text: str, job_desc: str) -> dict:
 
     resp = client.chat.completions.create(
         # model="mistralai/mistral-small-3.2-24b-instruct:free",
-        model="deepseek/deepseek-chat-v3.1:free",
+        model="nvidia/nemotron-nano-12b-v2-vl:free",
         # model="openrouter/sonoma-dusk-alpha",
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
